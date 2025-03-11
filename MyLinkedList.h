@@ -1,15 +1,16 @@
+
 #ifndef MYLINKEDLIST_H
 #define MYLINKEDLIST_H
-
-#include <iostream>
-using namespace std;
-
 class MyLinkedList {
 public:
-    int value;
+    int val;
     MyLinkedList* next;
+    MyLinkedList(int v);
 
-    MyLinkedList(int val) : value(val), next(nullptr) {}
 };
+inline MyLinkedList::MyLinkedList(int v) {
+    val=v;
+    next =NULL;
+}
 
-#endif // MYLINKEDLIST_H
+#endif //MYLINKEDLIST_H
